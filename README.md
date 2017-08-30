@@ -23,8 +23,11 @@ Gerenciar dados dos filmes;
 Classe filme: nome, título, classificação indicativa, ano de lançamento, sinopse, gênero, duração
 Classe tipoFilme: tipoFilme
 Classe funcionário: nome, rg, cpf, data de nascimento, endereço, telefone, número da carteira de trabalho, login, senha
+
 Classe cliente: nome, rg, cpf, data de nascimento, endereço, telefone, pontosAdquiridos
+
 Classe compra: nomeCliente, nomeFilme, tipoCompra
+
 Classe filme: nomeFilme, tipoFilme
 
 # Integrantes do grupo:
