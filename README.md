@@ -1,5 +1,7 @@
 # Streaming-movies----SI400
+
 Repositório criado para a realização do projeto da disciplina SI400
+
 Resumo 
 
 Com o intuito de melhorar o sistema de uma locadora de filmes, será desenvolvido um software com as principais funcionalidades almejadas por uma empresa deste ramo.
@@ -28,6 +30,9 @@ Classe filme: nomeFilme, tipoFilme
 Integrantes do grupo
 
 Bruno Antunes
+
 Karina Hagiwara
+
 Otavio Passareli
+
 Renata Angelelli
