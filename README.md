@@ -13,9 +13,13 @@ Desenvolver um software capaz de gerenciar uma locadora de filmes.
 # Requisitos: 
 
 Gerenciar filmes disponíveis;
+
 Gerenciar clientes;
+
 Gerenciar funcionários;
+
 Gerenciar compras/aluguéis realizados pelo cliente;
+
 Gerenciar dados dos filmes;
 
 # Classes iniciais:
