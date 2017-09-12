@@ -1,0 +1,391 @@
+
+
+Desde a criação do projeto e do repositório no github, o grupo discutiu sobre quais seriam os atributos de cada classe bem como o tipo dos mesmos. Após essa decisão,
+o grupo criou todas as classes previstas no projeto bem como os construtores, getters e setters das mesmas. Ainda durante esse prazo (até 12/09), o grupo começou a
+discutir sobre quais os métodos pertencentes a cada classe. 
+
+Abaixo serão colocadas todas as classes e suas respectivas implementações até o momento (todos os atributos, getters, setters e construtores).
+
+#CLASSE CLIENTE:
+
+package locadora;
+
+/**
+ *
+ * @author bacs3
+ */
+public class Cliente {
+    private String nomeCliente;
+    private int rgCliente;
+    private int cpfCliente;
+    private String dataNascimentoCliente;
+    private String enderecoCliente;
+    private int telefoneCliente;
+    private float pontosAdquiridos;
+
+    public Cliente(String nomeCliente, int rgCliente, int cpfCliente, String dataNascimentoCliente, String enderecoCliente, int telefoneCliente, float pontosAdquiridos) {
+        this.nomeCliente = nomeCliente;
+        this.rgCliente = rgCliente;
+        this.cpfCliente = cpfCliente;
+        this.dataNascimentoCliente = dataNascimentoCliente;
+        this.enderecoCliente = enderecoCliente;
+        this.telefoneCliente = telefoneCliente;
+        this.pontosAdquiridos = pontosAdquiridos;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public int getRgCliente() {
+        return rgCliente;
+    }
+
+    public void setRgCliente(int rgCliente) {
+        this.rgCliente = rgCliente;
+    }
+
+    public int getCpfCliente() {
+        return cpfCliente;
+    }
+
+    public void setCpfCliente(int cpfCliente) {
+        this.cpfCliente = cpfCliente;
+    }
+
+    public String getDataNascimentoCliente() {
+        return dataNascimentoCliente;
+    }
+
+    public void setDataNascimentoCliente(String dataNascimentoCliente) {
+        this.dataNascimentoCliente = dataNascimentoCliente;
+    }
+
+    public String getEnderecoCliente() {
+        return enderecoCliente;
+    }
+
+    public void setEnderecoCliente(String enderecoCliente) {
+        this.enderecoCliente = enderecoCliente;
+    }
+
+    public int getTelefoneCliente() {
+        return telefoneCliente;
+    }
+
+    public void setTelefoneCliente(int telefoneCliente) {
+        this.telefoneCliente = telefoneCliente;
+    }
+
+    public float getPontosAdquiridos() {
+        return pontosAdquiridos;
+    }
+
+    public void setPontosAdquiridos(float pontosAdquiridos) {
+        this.pontosAdquiridos = pontosAdquiridos;
+    }
+}
+
+
+#CLASSE COMPRA:
+
+package locadora;
+
+/**
+ *
+ * @author bacs3
+ */
+public class Compra {
+    private int nomeCliente;
+    private int nomeFilme;
+    private int tipoCompra;
+
+    public int getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(int nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public int getNomeFilme() {
+        return nomeFilme;
+    }
+
+    public void setNomeFilme(int nomeFilme) {
+        this.nomeFilme = nomeFilme;
+    }
+
+    public int getTipoCompra() {
+        return tipoCompra;
+    }
+
+    public void setTipoCompra(int tipoCompra) {
+        this.tipoCompra = tipoCompra;
+    }
+
+    public Compra(int nomeCliente, int nomeFilme, int tipoCompra) {
+        this.nomeCliente = nomeCliente;
+        this.nomeFilme = nomeFilme;
+        this.tipoCompra = tipoCompra;
+    }
+}
+
+
+#CLASSE FILME:
+
+package locadora;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bacs3
+ */
+public class Filme {
+    private NomeFilme nomeFilme;
+    private TipoFilme tipoFilme;
+
+    public NomeFilme getNomeFilme() {
+        return nomeFilme;
+    }
+
+    public void setNomeFilme(NomeFilme nomeFilme) {
+        this.nomeFilme = nomeFilme;
+    }
+
+    public TipoFilme getTipoFilme() {
+        return tipoFilme;
+    }
+
+    public void setTipoFilme(TipoFilme tipoFilme) {
+        this.tipoFilme = tipoFilme;
+    }
+
+    public Filme(NomeFilme nomeFilme, TipoFilme tipoFilme) {
+        this.nomeFilme = nomeFilme;
+        this.tipoFilme = tipoFilme;
+    }
+}
+
+#CLASSE FUNCIONARIO:
+
+package locadora;
+
+/**
+ *
+ * @author bacs3
+ */
+public class Funcionario {
+    private int rgFuncionario;
+    private String dataNascimentoFuncionario;
+    private int cpfFuncionario;
+    private String enderecoFuncionario;
+    private int telefoneFuncionario;
+    private int carteiraDeTrabalho;
+    private String login;
+    private String senha;
+
+    public int getRgFuncionario() {
+        return rgFuncionario;
+    }
+
+    public void setRgFuncionario(int rgFuncionario) {
+        this.rgFuncionario = rgFuncionario;
+    }
+
+    public String getDataNascimentoFuncionario() {
+        return dataNascimentoFuncionario;
+    }
+
+    public void setDataNascimentoFuncionario(String dataNascimentoFuncionario) {
+        this.dataNascimentoFuncionario = dataNascimentoFuncionario;
+    }
+
+    public int getCpfFuncionario() {
+        return cpfFuncionario;
+    }
+
+    public void setCpfFuncionario(int cpfFuncionario) {
+        this.cpfFuncionario = cpfFuncionario;
+    }
+
+    public String getEnderecoFuncionario() {
+        return enderecoFuncionario;
+    }
+
+    public void setEnderecoFuncionario(String enderecoFuncionario) {
+        this.enderecoFuncionario = enderecoFuncionario;
+    }
+
+    public int getTelefoneFuncionario() {
+        return telefoneFuncionario;
+    }
+
+    public void setTelefoneFuncionario(int telefoneFuncionario) {
+        this.telefoneFuncionario = telefoneFuncionario;
+    }
+
+    public int getCarteiraDeTrabalho() {
+        return carteiraDeTrabalho;
+    }
+
+    public void setCarteiraDeTrabalho(int carteiraDeTrabalho) {
+        this.carteiraDeTrabalho = carteiraDeTrabalho;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public Funcionario(int rgFuncionario, String dataNascimentoFuncionario, int cpfFuncionario, String enderecoFuncionario, int telefoneFuncionario, int carteiraDeTrabalho, String login, String senha) {
+        this.rgFuncionario = rgFuncionario;
+        this.dataNascimentoFuncionario = dataNascimentoFuncionario;
+        this.cpfFuncionario = cpfFuncionario;
+        this.enderecoFuncionario = enderecoFuncionario;
+        this.telefoneFuncionario = telefoneFuncionario;
+        this.carteiraDeTrabalho = carteiraDeTrabalho;
+        this.login = login;
+        this.senha = senha;
+    }
+}
+
+#CLASSE NOMEFILME:
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package locadora;
+
+/**
+ *
+ * @author bacs3
+ */
+public class NomeFilme {
+    private String nome;
+    private String titulo;
+    private int classificacao;
+    private int anolancamento;
+    private String sinopse;
+    private String genero;
+    private float duracao;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getClassificacao() {
+        return classificacao;
+    }
+
+    public void setClassificacao(int classificacao) {
+        this.classificacao = classificacao;
+    }
+
+    public int getAnolancamento() {
+        return anolancamento;
+    }
+
+    public void setAnolancamento(int anolancamento) {
+        this.anolancamento = anolancamento;
+    }
+
+    public String getSinopse() {
+        return sinopse;
+    }
+
+    public void setSinopse(String sinopse) {
+        this.sinopse = sinopse;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public float getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(float duracao) {
+        this.duracao = duracao;
+    }
+    
+    public NomeFilme(String nome, String titulo, int classificacao, int anolancamento, String sinopse, String genero, float duracao) {
+        this.nome = nome;
+        this.titulo = titulo;
+        this.classificacao = classificacao;
+        this.anolancamento = anolancamento;
+        this.sinopse = sinopse;
+        this.genero = genero;
+        this.duracao = duracao;
+    }
+    
+}
+
+
+#CLASSE TIPOFILME:
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package locadora;
+
+/**
+ *
+ * @author bacs3
+ */
+public class TipoFilme {
+    private String tipoDoFilme;
+
+    public String getTipoDoFilme() {
+        return tipoDoFilme;
+    }
+
+    public void setTipoDoFilme(String tipoDoFilme) {
+        this.tipoDoFilme = tipoDoFilme;
+    }
+
+    public TipoFilme(String tipoDoFilme) {
+        this.tipoDoFilme = tipoDoFilme;
+    }
+}
