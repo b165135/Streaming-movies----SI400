@@ -13,7 +13,7 @@ public class NomeFilme {
     private String nome;
     private String titulo;
     private int classificacao;
-    private int anolancamento;
+    private int anoLancamento;
     private String sinopse;
     private String genero;
     private float duracao;
