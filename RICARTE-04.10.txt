@@ -1,0 +1,80 @@
+
+
+RICARTE 04/10
+
+Desde a última entrega, o grupo vem discutindo sobre os métodos que serão implementados para as classes. 
+
+Após discussão, o grupo começou as implementações de alguns métodos que serão postados juntamente com os arquivos .java das classes do projeto
+
+Métodos que foram implementados: 
+
+-Classe Cliente: 
+	.método que permite mudar o endereço do cliente, passando como parâmetro o novo endereço:
+	 public void mudaEnderecoCliente (String novoEnderecoCliente) {
+        this.enderecoCliente = novoEnderecoCliente; 
+    	}
+	
+	.método que permite mudar o telefone do cliente, passando como parâmetro o novo telefone:
+	 public void mudaTelefoneCliente (int novoTelefoneCliente) {
+        this.telefoneCliente = novoTelefoneCliente; 
+    	}
+
+-Classe Funcionário (de forma análoga ao cliente):
+	.método que permite mudar o endereço do funcionário, passando como parâmetro o novo endereço:
+	 public void alteraEnderecoFuncionario (String novoEnderecoFuncionario) {
+        this.enderecoFuncionario = novoEnderecoFuncionario;
+    	}
+
+	.método que permite mudar o telefone do funcionário, passando como parâmetro o novo telefone:
+	public void alteraTelefoneFuncionario (int novoTelefoneFuncionario) {
+        this.telefoneFuncionario = novoTelefoneFuncionario; 
+    	}
+	
+-Classe NomeFilme:
+	.método que permite alterar a classificação indicativa do filme, passando como parâmetro a nova classificação:
+	public void atualizaClassificacao (int novaClassificacao) {
+        this.classificacao = novaClassificacao;
+    	}
+
+-Classe TipoFilme:
+	.método que permite alterar o tipo do filme, passando como parâmetro o novo tipo do mesmo:
+	public void alteraTipoFilme (String novoTipoFilme) {
+        this.tipoDoFilme = novoTipoFilme; 
+    	}
+
+Além disso, o grupo decidiu por criar mais uma nova classe, a classe Aluguel. Essa nova classe terá como atributos a quantidade de dias pelos quais o filme
+foi alugado e qual o filme que foi alugado. O atributo que diz respeito a qual filme foi alugado será do tipo Filme (classe Filme) e o atributo que diz por
+quantos dias o filme foi alugado será do tipo int. O construtor, getters e setters dessa classe também foram implementados.  
+Quanto maior o número de dias pelos quais o filme é alugado, mais pontos o cliente ganha com o locadora (pontoAdquiridos). O código da classe segue abaixo:
+
+package locadora;
+
+/**
+ *
+ * @author Otavio
+ */
+public class Aluguel {
+    private int diasAlugado;
+    private Filme filme;
+    
+    public Aluguel(int diasAlugado, Filme filme){
+            this.diasAlugado = diasAlugado;
+            this.filme = filme;
+    }
+    
+    public int getDiasAlugado() {
+        return diasAlugado;
+    }
+    
+    public void setDiasAlugado(int diasAlugado) {
+        this.diasAlugado = diasAlugado; 
+    }
+    
+    public Filme getFilme() {
+        return filme;
+    }
+    
+    public void setFilme(Filme filme) {
+        this.filme = filme;
+    }
+}
