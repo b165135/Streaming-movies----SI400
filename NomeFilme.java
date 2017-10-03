@@ -43,11 +43,11 @@ public class NomeFilme {
     }
 
     public int getAnolancamento() {
-        return anolancamento;
+        return anoLancamento;
     }
 
-    public void setAnolancamento(int anolancamento) {
-        this.anolancamento = anolancamento;
+    public void setAnolancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
     }
 
     public String getSinopse() {
@@ -74,11 +74,11 @@ public class NomeFilme {
         this.duracao = duracao;
     }
     
-    public NomeFilme(String nome, String titulo, int classificacao, int anolancamento, String sinopse, String genero, float duracao) {
+    public NomeFilme(String nome, String titulo, int classificacao, int anoLancamento, String sinopse, String genero, float duracao) {
         this.nome = nome;
         this.titulo = titulo;
         this.classificacao = classificacao;
-        this.anolancamento = anolancamento;
+        this.anoLancamento = anoLancamento;
         this.sinopse = sinopse;
         this.genero = genero;
         this.duracao = duracao;
