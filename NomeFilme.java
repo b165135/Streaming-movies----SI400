@@ -13,7 +13,7 @@ public class NomeFilme {
     private String nome;
     private String titulo;
     private int classificacao;
-    private int anoLancamento;
+    private int anolancamento;
     private String sinopse;
     private String genero;
     private float duracao;
@@ -43,11 +43,11 @@ public class NomeFilme {
     }
 
     public int getAnolancamento() {
-        return anoLancamento;
+        return anolancamento;
     }
 
-    public void setAnolancamento(int anoLancamento) {
-        this.anoLancamento = anoLancamento;
+    public void setAnolancamento(int anolancamento) {
+        this.anolancamento = anolancamento;
     }
 
     public String getSinopse() {
@@ -74,14 +74,18 @@ public class NomeFilme {
         this.duracao = duracao;
     }
     
-    public NomeFilme(String nome, String titulo, int classificacao, int anoLancamento, String sinopse, String genero, float duracao) {
+    public NomeFilme(String nome, String titulo, int classificacao, int anolancamento, String sinopse, String genero, float duracao) {
         this.nome = nome;
         this.titulo = titulo;
         this.classificacao = classificacao;
-        this.anoLancamento = anoLancamento;
+        this.anolancamento = anolancamento;
         this.sinopse = sinopse;
         this.genero = genero;
         this.duracao = duracao;
+    }
+    
+    public void atualizaClassificacao (int novaClassificacao) {
+        this.classificacao = novaClassificacao;
     }
     
 }

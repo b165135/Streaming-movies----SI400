@@ -23,4 +23,8 @@ public class TipoFilme {
     public TipoFilme(String tipoDoFilme) {
         this.tipoDoFilme = tipoDoFilme;
     }
+    
+    public void alteraTipoFilme (String novoTipoFilme) {
+        this.tipoDoFilme = novoTipoFilme; 
+    }
 }

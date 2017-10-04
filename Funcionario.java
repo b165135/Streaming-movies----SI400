@@ -93,4 +93,13 @@ public class Funcionario {
         this.login = login;
         this.senha = senha;
     }
+    
+    public void alteraEnderecoFuncionario (String novoEnderecoFuncionario) {
+        this.enderecoFuncionario = novoEnderecoFuncionario;
+    }
+    
+    public void alteraTelefoneFuncionario (int novoTelefoneFuncionario) {
+        this.telefoneFuncionario = novoTelefoneFuncionario; 
+    }
+    
 }
