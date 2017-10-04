@@ -1,0 +1,32 @@
+
+
+RICARTE 04/10
+
+Além dos métodos postados e da class aluguel, foi criado o método para determinar a quantidade de pontos que o cliente ganha por alugar determinado filme. O comentário
+no corpo da função explica como funciona a quantidade de pontos ganhos. A função segue abaixo:
+
+public int calculaPontosAdquiridos () {
+        /*Caso o aluguel que o cliente realize seja por apenas um dia, ele ganha 1 ponto;
+          Caso seja de 2 a 5 dias, ele ganha 2 pontos;
+          Caso seja de 6 ou 7 dias, ele ganha 3 pontos;
+        */
+        
+        pontosAdquiridos = 0;
+        
+        if (alugado.getDiasAlugado() == 1) {
+            pontosAdquiridos = pontosAdquiridos + 1;
+        }
+        
+        if ((alugado.getDiasAlugado() >= 2) && (alugado.getDiasAlugado() <=5)) {
+            pontosAdquiridos = pontosAdquiridos + 2;
+        }
+        
+        if (alugado.getDiasAlugado() >= 6) {
+            pontosAdquiridos = pontosAdquiridos + 3;
+        }
+        
+        return pontosAdquiridos;
+            
+    }
+
+
