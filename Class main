@@ -1,0 +1,15 @@
+package locadora;
+
+/**
+ *
+ * @author Otavio
+ */
+import java.io.IOException;
+public class main {
+    
+    public static void main(String[] args) throws IOException {
+        String path = "ArquivoLocadora.txt";
+        
+        Arquivo.escritor(path);
+    }
+}
