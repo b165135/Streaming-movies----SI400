@@ -1,0 +1,20 @@
+
+
+
+MARCO IV - RICARTE (13/11/2017).
+
+Para implementar o conteúdo necessário para a entrega do marco IV foram feitas as seguintes mudanças no projeto:
+
+	- Os objetos que estavam sendo criados na classe main.java passaram a ser criados na classe home.java no pacote view;
+	- O polimorfismo está implementado junto com a criação de um objeto da classe Pessoa também na classe home.java da seguinte maneira:
+	
+		Pessoa p1;
+        	p1 = new Funcionario (1235, "pessoafunc", "senha2", 0, a1, "Bruno", 8139, "20/08/1995", 639068, "Rua X", 34265715);
+           	p1.calculaPontosAdquiridos(); //Chama o método da classe Funcionario 
+
+	- Foram colocados todos os javaDocs; 
+
+OBSERVAÇÃO: Quando importamos pela primera vez o projeto, o NetBeans acusa um problema e fornece a opção para resolvê-lo. Clicando em
+resolver problemas ele roda normalmente (isso ocorre apenas na primeira vez que vamos importar o projeto, depois não ocorre mais).
+
+ 
